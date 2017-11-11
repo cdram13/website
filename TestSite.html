@@ -1,0 +1,72 @@
+﻿
+<html>
+
+	<head>
+		<title>Ram's Test Site for Cognitir</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<style>
+			h1 {
+				color:black;
+			}
+
+			ul {
+				list-style-type: square;
+			}
+
+			body {
+				background-image: url("http://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-030.jpg");
+			}
+			#ChicagoSkyline {
+				max-width: 30%;
+			}
+		</style>
+	</head>
+
+
+	<body>
+		<h1>First Heading</h1>
+		<p>This is some text under the first heading</p>
+		<p>Here is an image</p>
+		<img id = "ChicagoSkyline" src="http://cleanenergytrust.org/wp-content/uploads/2016/05/chicago-at-night-wallpaper-4.jpg">
+
+		<h2>Second Heading</h2>
+		<p> Here is some sub text again</p>
+		<ul>
+			<li>First Item</li>
+			<li>Second Item</li>
+			<li>Third Item</li>
+		</ul>
+		<h1>Dynamic Part</h1>
+		<p id="myParagraph"> </p>
+
+		<!-- Import jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+		</script>
+
+		<!-- Import Bootstrap js -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+		</script>
+
+		<button type="button" onclick="document.getElementById('myParagraph').innerHTML = 'Hello World'">Click</button>
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					I am the first element in the carousel.
+				</div>
+				<div class="item">
+					I am the second element in the carousel.
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#myCarousel").carousel({interval: 4000});
+			});
+		</script>
+
+	</body>
+
+
+</html>
